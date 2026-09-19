@@ -1,0 +1,84 @@
+# ===== 系统 / 编辑器 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# ===== Gowin EDA (PDS) FPGA 工程构建产物 =====
+# 综合/布局布线/生成bitstream 等流程输出目录（每次编译自动重新生成）
+compile/
+synthesize/
+device_map/
+place_route/
+generate_netlist/
+generate_bitstream/
+report_timing/
+constraint_check/
+constraint_backup/
+Design Editor/
+log/
+logbackup/
+
+# Gowin 生成的中间文件 / 输出文件
+*.db
+*.cmr
+*.dmr
+*.bgr
+*.gnr
+*.prt
+*.adf
+*.pvf
+*.pcf
+*.snr
+*.rtr
+*.prr
+*.netlist
+*.sdf
+*.sbit
+*.sfc
+*.smsk
+*.ccr
+*.crf
+*.lst
+*.lnp
+*.dep
+*.log
+
+# 工程根目录的临时 / 报告文件
+rdfile_*
+cfg_verify_result.sbit
+multiseed_summary.csv
+
+# IP core 元数据（可重新生成）
+.last_generated
+
+# ===== STM32 Keil MDK 工程构建产物 =====
+# 编译 / 链接输出
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.lnp
+*.map
+*.htm
+*.dep
+*.sct
+*.Bak
+*.bak
+
+# Keil 输出目录（ble_master/ 内只有 .o/.d/.axf 等产物，无源码）
+MDK-ARM_project/ble_master/
+MDK-ARM_project/DebugConfig/
+MDK-ARM_project/RTE/
+MDK-ARM_project/Listings/
+MDK-ARM_project/Objects/
+
+# STM32CubeMX 生成
+.mxproject
+
+# Keil 用户界面布局（含本机用户名，勿提交）
+*.uvguix.*
+
+# 注：ble_master.uvoptx 若含本机绝对路径可一并忽略，否则可保留
